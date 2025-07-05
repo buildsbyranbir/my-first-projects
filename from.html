@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form_group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Personal Information:</h1>
+        <form class="form">
+            <div class="form_group">
+                <label for="own_name">Your Name:</label>
+                <input id="own_name" type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form_group">
+                <label for="father">Your father's name:</label>
+                <input id="father" type="text" placeholder="Enter your father's name">
+            </div>
+
+            <div class="form_group">
+                <label for="mother">Your mother's name:</label>
+                <input id="mother" type="text" placeholder="Enter your mother's name">
+            </div>
+
+            <div class="form_group">
+                <label for="phone">Your phone number:</label>
+                <input id="phone" type="text" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form_group">
+                <button type="submit">Submit</button>
+            </div>
+
+            <!-- === radio type ===-->
+
+            <fieldset>
+                <legend>Your favourite fruits</legend>
+
+                <label for="mango">
+                    <input type="radio" name="fruits" id="mango"> Mango
+                </label><br>
+
+                <label for="orange">
+                    <input type="radio" name="fruits" id="orange"> Orange
+                </label><br>
+
+                <label for="banana">
+                    <input type="radio" name="fruits" id="banana"> Banana
+                </label><br>
+
+                <label for="jackfruits">
+                    <input type="radio" name="fruits" id="jackfruits"> Jackfruits
+                </label><br>
+
+                <label for="temarind">
+                    <input type="radio" name="fruits" id="temarind"> Temarind
+                </label>
+            </fieldset> <br> <br>
+
+            <!-- === checkbox  type === -->
+            <fieldset>
+                <legend>Your favourite country</legend>
+                <label for="bangladesh">
+                    <input type="checkbox" name="country" id="bangladesh"> Bangladesh
+                </label><br>
+
+                <label for="india">
+                    <input type="checkbox" name="country" id="india">india
+                </label><br>
+
+                <label for="japan">
+                    <input type="checkbox" name="country" id="japan">Japan
+                </label><br>
+
+                <label for="thiland">
+                    <input type="checkbox" name="country" id="thiland"> Thiland
+                </label><br>
+
+                <label for="china">
+                    <input type="checkbox" name="country" id="thiland"> China
+                </label>
+            </fieldset> <br> <br>
+
+
+            <fieldset>
+                <legend>Enter your comment about your favourite country</legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset> <br> <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form> <br> <br>
+    </main>
+</body>
+
+</html>
